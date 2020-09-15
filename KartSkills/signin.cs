@@ -17,8 +17,18 @@ namespace KartSkills
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
+            if ((tb_email.Text == "admin") && (tb_password.Text == "123"))
+            {
+                MessageBox.Show("Вы авторизовались!");
+
+            }
+            else
+            {
+                MessageBox.Show("Польтзователь не найден");
+
+            }
 
         }
 
