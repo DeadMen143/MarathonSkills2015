@@ -10,16 +10,17 @@ using System.Windows.Forms;
 
 namespace KartSkills
 {
-    public partial class Form1 : Form
+    public partial class main : Template
     {
-        public Form1()
+        public main()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void pictureBox4_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Hello");
+            new signin().Show();
+            Hide();
         }
     }
 }
